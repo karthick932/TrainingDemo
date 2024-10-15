@@ -1,0 +1,69 @@
+!SESSION 2024-10-15 10:48:54.224 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=17.0.10+7
+JRE 17 Windows 11 amd64-64-Bit Compressed References 20240116_624 (JIT enabled, AOT enabled)
+OpenJ9   - 2c3d78b48
+OMR      - ea8124dbc
+JCL      - 2aad089841f based on jdk-17.0.10+7
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product com.ibm.rational.rft.product.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rft.product.ide
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-10-15 10:49:33.932
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\karthick_ba'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.ibm.rational.test.lt.server 1 0 2024-10-15 10:49:39.382
+!MESSAGE RPTS1518I DS_OUT: Started dataset service C:\Program Files\HCL\DevOpsTest\jdk\bin\java.exe, -jar, C:\Program Files\HCL\DevOpsTest\..\HCLIMShared\plugins\com.ibm.rational.test.lt.server_1.4.900.v20240607_1345\datasets\datasets-service.jar, --spring.profiles.active=wb, --server.port=7081, --server.address=127.0.0.1, --dataset.service.exitdetect=true
+
+!ENTRY com.ibm.rational.test.lt.testgen.core3 1 0 2024-10-15 10:51:18.997
+!MESSAGE RPTTI0001 Test generation started at Tue Oct 15 10:51:18 IST 2024 -- input:  UITest.recsession
+
+!ENTRY com.ibm.rational.test.lt.testgen.core3 1 0 2024-10-15 10:51:21.014
+!MESSAGE RPTTI0002 Test generation completed at Tue Oct 15 10:51:21 IST 2024 -- output:  UITest.testsuite
+
+!ENTRY org.eclipse.core.resources 4 2 2024-10-15 10:51:46.728
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:447)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:569)
+	at org.eclipse.ui.model.WorkbenchContentProvider.processDelta(WorkbenchContentProvider.java:128)
+	at org.eclipse.ui.model.WorkbenchContentProvider.resourceChanged(WorkbenchContentProvider.java:103)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:381)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1505)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2329)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2340)
+	at com.ibm.rational.test.lt.recorder.core.internal.io.Utils.refreshFiles(Utils.java:92)
+	at com.ibm.rational.test.lt.recorder.core.internal.io.Utils.refreshRecmodelFiles(Utils.java:87)
+	at com.ibm.rational.test.lt.recorder.core.internal.session.RecordingSession.startRecModel(RecordingSession.java:732)
+	at com.ibm.rational.test.lt.recorder.core.internal.session.RecordingSession$1.run(RecordingSession.java:185)
+	at com.ibm.rational.test.lt.recorder.core.internal.session.ProcessingQueue.run(ProcessingQueue.java:38)
+
+!ENTRY com.ibm.rational.test.lt.testgen.core3 1 0 2024-10-15 10:52:26.037
+!MESSAGE RPTTI0001 Test generation started at Tue Oct 15 10:52:26 IST 2024 -- input:  UITestdemo.recsession
+
+!ENTRY com.ibm.rational.test.lt.testgen.core3 1 0 2024-10-15 10:52:27.296
+!MESSAGE RPTTI0002 Test generation completed at Tue Oct 15 10:52:27 IST 2024 -- output:  UITestdemo.testsuite
+
+!ENTRY com.ibm.rational.test.lt.execution.extension 2 0 2024-10-15 10:53:47.227
+!MESSAGE RPTR0000W ALOHA STOP for null
+
+!ENTRY com.ibm.rational.test.lt.execution.extension 2 0 2024-10-15 10:53:47.230
+!MESSAGE RPTR0000W XMLAlohaTypedEventLoader setStatus HISTORY_COMPLETE for null
+
+!ENTRY com.ibm.rational.test.lt.execution 1 0 2024-10-15 10:53:49.516
+!MESSAGE RPTJ1000E Cleaning working directory C:\Users\karthick_ba\AppData\Local\Temp\rpt.UITestdemo.8073907534561595324
+
+!ENTRY org.eclipse.e4.ui.workbench.swt 1 0 2024-10-15 10:57:22.448
+!MESSAGE Saving dialog settings
