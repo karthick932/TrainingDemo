@@ -43,8 +43,6 @@ resources:
             type: statsSessionStore
           - path: /UITestProject/Results/UITestscript_1728966694826.executiondlr
             type: statsSessionAsset
-          - path: /UITestProject/Tests/UITestscript.testsuite
-            type: statsSessionTest
       - name: UITestscript_1728966693907.xmoebreport
       - name: UITestscript_1728966693907_orch!system.mstats
       - name: UITestscript_1728966693907_orch!system.rstats
@@ -73,8 +71,6 @@ resources:
             type: statsSessionStore
           - path: /UITestProject/Results/UITestscript_1728966820423.executiondlr
             type: statsSessionAsset
-          - path: /UITestProject/Tests/UITestscript.testsuite
-            type: statsSessionTest
       - name: UITestscript_1728966820165.xmoebreport
       - name: UITestscript_1728966820165_orch!system.mstats
       - name: UITestscript_1728966820165_orch!system.rstats
@@ -87,6 +83,24 @@ resources:
     resources: 
   - name: Tests
     resources: 
+      - name: UITest.recdata
+      - name: UITest.recsession
+        type: com.ibm.rational.test.lt.recsession
+        dependencies: 
+          - path: /UITestProject/Tests/UITest.recdata
+            type: recsessionRecdata
+      - name: UITest.testsuite
+        type: com.ibm.rational.test.lt.test
+        version: 11.0.2.0
+        properties: 
+          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
+          type: com.ibm.rational.test.lt.lttest
+          uid: A1EF8AB38DDDD800F339B26661316135
+        dependencies: 
+          - path: /UITestProject/Tests/UITest.recsession
+            type: testRecsession
+          - path: /UITestProject/pectran_com_5e8.ma
+            type: test#moeb.applicationPackage
       - name: UITestscript.recdata
       - name: UITestscript.recsession
         type: com.ibm.rational.test.lt.recsession
@@ -94,19 +108,7 @@ resources:
           - path: /UITestProject/Tests/UITestscript.recdata
             type: recsessionRecdata
       - name: UITestscript.testsuite
-        type: com.ibm.rational.test.lt.test
-        version: 11.0.2.0
-        properties: 
-          features: 'com.ibm.rational.test.lt.feature.lt,com.ibm.rational.test.lt.feature.mobileweb'
-          type: com.ibm.rational.test.lt.lttest
-          uid: A1EF8AADE55F5460F059B93633306532
-        dependencies: 
-          - path: /UITestProject/Datasets/Dataset1.csv
-            type: testDatapool
-          - path: /UITestProject/Tests/UITestscript.recsession
-            type: testRecsession
-          - path: /UITestProject/pectran_com_5e8.ma
-            type: test#moeb.applicationPackage
+        missing: true
   - name: pectran_com_5e8.ma
     type: moeb.applicationPackage
   - name: src

@@ -34,4 +34,9 @@
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
 	</section>
+	<section name="A1EF8AB38DDDD800F339B26661316135">
+		<section name="ShowDatapoolCandidatesDialog">
+			<item key="show_candidates" value="true"/>
+		</section>
+	</section>
 </section>
